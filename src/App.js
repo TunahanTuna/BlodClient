@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import { CssBaseline, Container, Grid, AppBar, Toolbar, Typography, Button, IconButton, } from "@material-ui/core";
 import { makeStyles } from '@material-ui/core/styles';
 import PenIcon from "@material-ui/icons/Create";
-import AddPostForm   from "./components/AddPostForm";
 import {
   BrowserRouter as Router,
   Switch,
@@ -54,7 +53,7 @@ const App = () => {
               <a href="http://localhost:3000/posts">Blog</a>
             </Typography>
 
-            <Button color="secondary" variant="outlined" startIcon={<PenIcon />} onClic={handleOpen} >
+            <Button color="secondary" variant="outlined" startIcon={<PenIcon />} onClick={handleOpen} >
               Yeni Yazı
             </Button>
 

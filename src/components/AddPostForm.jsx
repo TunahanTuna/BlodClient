@@ -59,7 +59,7 @@ const AddPostForm = ({ open, handleClose }) => {
                             className={classes.textField}
                             size="small"
                             inputRef={register}
-                            error={errors.title ? true : false}
+                            // error={errors.title ? true : false}
                             fullWidth
                         />
                         <TextField
@@ -70,31 +70,31 @@ const AddPostForm = ({ open, handleClose }) => {
                             className={classes.textField}
                             size="small"
                             inputRef={register}
-                            error={errors.subtitle ? true : false}
+                            // error={errors.subtitle ? true : false}
                             fullWidth
                         />
                         <Controller
                             as={
                                 <Select
-                                    input={<Input/>}
+                                    input={<Input />}
                                     className={classes.textField}
                                     fullWidth
                                 >
                                     {
-                                        tags.map((tag,index)=>(
+                                        tags.map((tag, index) => (
                                             <MenuItem key={index} value={tag} >
                                                 {tag}
                                             </MenuItem>
                                         ))
-                                    }                                                 
+                                    }
                                 </Select>
                             }
                             name="tag"
-                            control = {control}
-                            error = {errors.tag ? true : false}
-                            defaultValue = {tags[0]}
+                            control={control}
+                            // error = {errors.tag ? true : false}
+                            defaultValue={tags[0]}
                         />
-                         <TextField 
+                        <TextField
                             id="content"
                             label="İçerik"
                             name="content"
@@ -104,7 +104,7 @@ const AddPostForm = ({ open, handleClose }) => {
                             className={classes.textField}
                             size="small"
                             inputRef={register}
-                            error={errors.content ? true : false}
+                            // error={errors.content ? true : false}
                             fullWidth
                         />
                     </form>
