@@ -6,7 +6,6 @@ import {
     Card,
     Chip,
     Button,
-    CarMedia,
     CardContent,
     CardActions,
     Typography,
@@ -49,7 +48,7 @@ const Post = ({ _id, title, subtitle, content, tag, image, createdAt }) => {
 
             />
             <div className={classes.overlay}>
-                <Typography variant="h6">Tunahan</Typography>
+                <Typography variant="h6">Yazar: Tunahan</Typography>
                 <Typography variant="body2">
                     {convertRelativeTime(createdAt)}
                 </Typography>
