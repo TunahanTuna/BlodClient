@@ -12,7 +12,7 @@ import {
     DialogContentText,
     DialogTitle,
 } from "@material-ui/core";
-import { useRef, Controller, useForm } from 'react-hook-form';
+import { Controller, useForm } from 'react-hook-form';
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 
@@ -59,7 +59,7 @@ const AddPostForm = ({ open, handleClose }) => {
                             className={classes.textField}
                             size="small"
                             inputRef={register}
-                            // error={errors.title ? true : false}
+                            error={errors.title ? true : false}
                             fullWidth
                         />
                         <TextField
@@ -70,7 +70,7 @@ const AddPostForm = ({ open, handleClose }) => {
                             className={classes.textField}
                             size="small"
                             inputRef={register}
-                            // error={errors.subtitle ? true : false}
+                            error={errors.subtitle ? true : false}
                             fullWidth
                         />
                         <Controller
@@ -91,7 +91,7 @@ const AddPostForm = ({ open, handleClose }) => {
                             }
                             name="tag"
                             control={control}
-                            // error = {errors.tag ? true : false}
+                            error = {errors.tag ? true : false}
                             defaultValue={tags[0]}
                         />
                         <TextField
@@ -104,7 +104,7 @@ const AddPostForm = ({ open, handleClose }) => {
                             className={classes.textField}
                             size="small"
                             inputRef={register}
-                            // error={errors.content ? true : false}
+                            error={errors.content ? true : false}
                             fullWidth
                         />
                     </form>
